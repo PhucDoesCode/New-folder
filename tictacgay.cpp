@@ -237,7 +237,7 @@ void botToGo (){
                         }
                         else if(numChoose==2 && board[i][j-2]== ' '){
                         
-                        board[i][j-2]= BOT;  cout<<i<<" "<<j;
+                        board[i][j-2]= BOT; 
                         goto exit;
                         }
                     }
@@ -283,11 +283,11 @@ void botToGo (){
                         srand(time(NULL));
                         int numChoose = rand() % 2 +1;
                         if(numChoose==1 && board[i-1][j] == ' '){
-                        board[i-1][j]=BOT; ;
+                        board[i-1][j]=BOT;
                         goto exit;
                         }
                         else if(numChoose==2 && board[i+2][j] == ' '){
-                        board[i+2][j]= BOT; ;
+                        board[i+2][j]= BOT;
                         goto exit;
                         }
                         }
